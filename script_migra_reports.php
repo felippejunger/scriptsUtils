@@ -10,12 +10,12 @@
 //################# CONFIGURACAO PARAMETROS OBRIGATORIOS ###########################
 
 /*INSTANCIA ORIGEM*/
-$url_origem_relatorios = "";
+$url_origem_relatorios = "https://";
 $user_origem_relatorios = "";
 $pass_origem_relatorios = "";
 
 /*INSTANCIA DESTINO*/
-$url_destino_relatorios = "";
+$url_destino_relatorios = "https://";
 $user_destino_relatorios = "";
 $pass_destino_relatorios = "";
 
@@ -65,7 +65,7 @@ foreach ($ids_relatorios as $relatorio){
         }
     }
     else{
-        throw new Exception("Erro ao recuperar token de acesso para ".($access_token_origem ? $url_origem_relatorios:$url_destino_relatorios_relatorios),500);
+        throw new Exception("Erro ao recuperar token de acesso para ".($access_token_origem ? $url_origem_relatorios:$url_destino_relatorios),500);
     }
 
 }
